@@ -2137,6 +2137,8 @@ RoamMon3HP:: ; dfe1
 	ds 1
 RoamMon3DVs:: ; dfe2
 	ds 2
+FreeStuffForHL:: ; dfe4
+	ds 2
 
 
 

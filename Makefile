@@ -31,18 +31,20 @@ gfx/pics.o
 
 OBJS := $(CRYSTAL_OBJS)
 
-ROMS := pokecrystal.gbc
+ROMS := crystal-speedgame.gbc
 
 # object dependencies
 $(shell $(foreach obj, $(OBJS), $(eval $(obj:.o=)_DEPENDENCIES := $(shell $(INCLUDES) $(obj:.o=.asm)))))
 
 all: $(ROMS)
 
-crystal: pokecrystal.gbc
+crystal: crystal-speedgame.gbc
 
 clean:
 	rm -f $(ROMS)
 	rm -f $(OBJS)
+	rm -f *.map
+	rm -f *.sym
 	find -iname '*.tx' -exec rm {} +
 
 baserom.gbc: ;
@@ -59,10 +61,9 @@ $(OBJS): $$*.tx $$(patsubst %.asm, %.tx, $$($$*_DEPENDENCIES))
 	$(eval TEXTQUEUE :=)
 	rgbasm -o $@ $*.tx
 
-pokecrystal.gbc: $(CRYSTAL_OBJS)
+crystal-speedgame.gbc: $(CRYSTAL_OBJS)
 	rgblink -n $*.sym -m $*.map -o $@ $^
 	rgbfix -Cjv -i BYTE -k 01 -l 0x33 -m 0x10 -p 0 -r 3 -t PM_CRYSTAL $@
-	cmp baserom.gbc $@
 
 
 pngs:

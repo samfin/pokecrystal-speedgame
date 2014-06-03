@@ -4393,14 +4393,14 @@ Function5f6b: ; 5f6b
 ; 5f84
 
 Function5f84: ; 5f84
-	ld de, GameTimeHours
-	ld bc, $0203
-	call PrintNum
-	ld [hl], $6d
-	inc hl
-	ld de, GameTimeMinutes
-	ld bc, $8102
-	jp PrintNum
+	ld a, h
+	ld [FreeStuffForHL], a
+	ld a, l
+	ld [FreeStuffForHL+1], a
+	push hl
+	callba PrintGameTime1
+	pop hl
+	ret
 ; 5f99
 
 
@@ -34293,21 +34293,13 @@ Function253f4: ; 253f4 (9:53f4)
 
 ; known jump sources: 251d7 (9:51d7), 25330 (9:5330)
 Function25415: ; 25415 (9:5415)
-	ld hl, $c59b
-	ld de, GameTimeHours ; $d4c4
-	ld bc, $204
-	call PrintNum
-	inc hl
-	ld de, GameTimeMinutes ; $d4c6
-	ld bc, $8102
-	call PrintNum
-	ld a, [$FF00+$9b]
-	and $1f
-	ret nz
-	ld hl, $c59f
-	ld a, [hl]
-	xor $51
-	ld [hl], a
+	ld a, h
+	ld [FreeStuffForHL], a
+	ld a, l
+	ld [FreeStuffForHL+1], a
+	push hl
+	callba PrintGameTime2
+	pop hl
 	ret
 
 ; known jump sources: 25224 (9:5224), 2527c (9:527c)
@@ -66922,15 +66914,13 @@ Function86810: ; 86810
 	hlcoord 1, 8
 	ld de, .PlayTime
 	call PlaceString
-	hlcoord 3, 9
-	ld de, GameTimeHours
-	ld bc, $0203
-	call PrintNum
-	ld [hl], $63
-	inc hl
-	ld de, GameTimeMinutes
-	ld bc, $8102
-	call PrintNum
+	ld a, h
+	ld [FreeStuffForHL], a
+	ld a, l
+	ld [FreeStuffForHL+1], a
+	push hl
+	callba PrintGameTime3
+	pop hl
 	call WaitBGMap
 	callba Function26601
 	ret
@@ -119724,15 +119714,7 @@ Function1dd7ae: ; 1dd7ae
 	ld de, $57f0
 	ld hl, $c5cf
 	call PlaceString
-	ld hl, $c5d8
-	ld de, GameTimeHours
-	ld bc, $0204
-	call PrintNum
-	ld [hl], $67
-	inc hl
-	ld de, GameTimeMinutes
-	ld bc, $8102
-	call PrintNum
+	callba PrintGameTime4
 	ret
 ; 1dd7f0
 
@@ -120120,6 +120102,90 @@ INCLUDE "text/battle_tower.asm"
 SECTION "bank7C", ROMX, BANK[$7C]
 
 INCBIN "baserom.gbc",$1f0000,$1f09d8 - $1f0000
+
+PrintGameTime1:
+	push hl
+	ld a, [FreeStuffForHL]
+	ld h, a
+	ld a, [FreeStuffForHL+1]
+	ld l, a
+	dec hl
+	dec hl
+	dec hl
+	ld de, GameTimeHours
+	ld bc, $0203
+	call PrintNum
+	ld [hl], $6d
+	inc hl
+	ld de, GameTimeMinutes
+	ld bc, $8102
+	call PrintNum
+	ld [hl], $6d
+	inc hl
+	ld de, GameTimeSeconds
+	ld bc, $8102
+	call PrintNum
+	pop hl
+	ret
+	
+PrintGameTime2:
+	ld hl, $c599
+	ld de, GameTimeHours ; $d4c4
+	ld bc, $204
+	call PrintNum
+	inc hl
+	ld de, GameTimeMinutes ; $d4c6
+	ld bc, $8102
+	call PrintNum
+	inc hl
+	ld de, GameTimeSeconds
+	ld bc, $8102
+	call PrintNum
+	ld a, [$FF00+$9b]
+	and $1f
+	ret nz
+	ld hl, $c59d
+	ld a, [hl]
+	xor $51
+	ld [hl], a
+	ld hl, $c5a0
+	ld a, [hl]
+	xor $51
+	ld [hl], a
+	ret
+	
+PrintGameTime3:
+	hlcoord 0, 9
+	ld de, GameTimeHours
+	ld bc, $0203
+	call PrintNum
+	ld [hl], $63
+	inc hl
+	ld de, GameTimeMinutes
+	ld bc, $8102
+	call PrintNum
+	ld [hl], $63
+	inc hl
+	ld de, GameTimeSeconds
+	ld bc, $8102
+	jp PrintNum
+	
+PrintGameTime4:
+	ld hl, $c5d5
+	ld de, GameTimeHours
+	ld bc, $0204
+	call PrintNum
+	ld [hl], $67
+	inc hl
+	ld de, GameTimeMinutes
+	ld bc, $8102
+	call PrintNum
+	ld [hl], $67
+	inc hl
+	ld de, GameTimeSeconds
+	ld bc, $8102
+	jp PrintNum
+
 
 
 SECTION "bank7D", ROMX, BANK[$7D]
