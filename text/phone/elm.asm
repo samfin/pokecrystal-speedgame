@@ -168,11 +168,14 @@ ElmPhoneRocketText: ; 0x1b4c06
 	
 	para "The final gym is"
 	line "run by CLAIR, a"
-	cont "DRAGONtype trainer"
+	cont "DRAGON trainer."
 
 	para "Beating her won't"
-	line "be easy, but the"
-	cont "ELITE FOUR is next"
+	line "be easy."
+	
+	para "But if you can do"
+	line "it, challenge the"
+	cont "ELITE FOUR!"
 	
 	para "Good luck!"
 	done
