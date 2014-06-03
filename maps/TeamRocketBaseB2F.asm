@@ -350,6 +350,38 @@ UnknownScript_0x6d184: ; 0x6d184
 	keeptextopen
 	verbosegiveitem HM_06, 1
 	setevent EVENT_GOT_HM06_WHIRLPOOL
+	setflag $0013
+	setevent $06cf
+	setevent $06d1
+	clearevent $06ce
+	clearevent $0025
+	setevent $0756
+	domaptrigger GROUP_MAHOGANY_TOWN, MAP_MAHOGANY_TOWN, $1
+	verbosegiveitem BASEMENT_KEY, 1
+	setevent $0573
+	verbosegiveitem CARD_KEY, 1
+	setevent $004a
+	setevent $0304
+	clearevent $0305
+	clearevent $0306
+	setevent $06c5
+	domaptrigger GROUP_BURNED_TOWER_1F, MAP_BURNED_TOWER_1F, $1
+	setevent EVENT_CLEARED_RADIO_TOWER
+	setevent $0571
+	clearflag $0013
+	setevent $06cc
+	setevent $06cd
+	setevent $06ce
+	clearevent $0736
+	clearflag $0017
+	clearevent $06cf
+	clearevent $06d0
+	setevent $06e3
+	clearevent $06e4
+	verbosegiveitem CLEAR_BELL, 1
+	domaptrigger GROUP_ECRUTEAK_HOUSE, MAP_ECRUTEAK_HOUSE, $0
+	setevent EVENT_GOT_CLEAR_BELL
+	setevent $0761	
 	2writetext UnknownText_0x6d8f8
 	closetext
 	loadmovesprites

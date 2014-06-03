@@ -359,14 +359,7 @@ UnknownScript_0xbc23e: ; 0xbc23e
 ; 0xbc242
 
 UnknownScript_0xbc242: ; 0xbc242
-	setflag $0013
-	setevent $06cf
-	setevent $06d1
-	clearevent $06ce
-	clearevent $0025
-	setevent $0756
 	specialphonecall $0004
-	domaptrigger GROUP_MAHOGANY_TOWN, MAP_MAHOGANY_TOWN, $1
 	end
 ; 0xbc25c
 

@@ -161,28 +161,20 @@ ElmPhoneEggAssistantText: ; 0x1b4b87
 ElmPhoneRocketText: ; 0x1b4c06
 	text $14, ", how are"
 	line "things going?"
+	
+	para "7 badges? Wow!"
+	line "You're getting"
+	cont "along really well!"
+	
+	para "The final gym is"
+	line "run by CLAIR, a"
+	cont "DRAGONtype trainer"
 
-	para "I called because"
-	line "something weird is"
-
-	para "happening with the"
-	line "radio broadcasts."
-
-	para "They were talking"
-	line "about TEAM ROCKET."
-
-	para $14, ", do you"
-	line "know anything"
-	cont "about it?"
-
-	para "Maybe TEAM ROCKET"
-	line "has returned. No,"
-
-	para "that just can't"
-	line "be true."
-
-	para "Sorry to bug you."
-	line "Take care!"
+	para "Beating her won't"
+	line "be easy, but the"
+	cont "ELITE FOUR is next"
+	
+	para "Good luck!"
 	done
 
 ElmPhoneGiftText: ; 0x1b4d09
