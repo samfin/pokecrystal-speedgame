@@ -1759,11 +1759,19 @@ UnknownText_0x1c1cf3: ; 1c1cf3
 ; 1c1d35
 
 _OakText1: ; 1c1d35
-	text "Hello! Sorry to"
-	line "keep you waiting!"
-
-	para "Welcome to the"
-	line "world of #MON!"
+	text "Welcome to the"
+	line "modified Crystal!"
+	cont "Version 0.2."
+	
+	para "Changes in this"
+	line "version are:"
+	
+	para "No ROCKET BASE"
+	line "or RADIO TOWER,"
+	
+	para "and all spinners"
+	line "replaced with"
+	cont "rotatos."
 
 	para "My name is OAK."
 
