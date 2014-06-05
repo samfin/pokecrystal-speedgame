@@ -53,14 +53,60 @@ LanceScript_0x70022: ; 0x70022
 	iffalse UnknownScript_0x7004e
 UnknownScript_0x70035: ; 0x70035
 	2writetext UnknownText_0x702c6
+	keeptextopen
+	clearevent $06d5
+	setevent EVENT_DECIDED_TO_HELP_LANCE
+	setevent EVENT_UNCOVERED_STAIRCASE_IN_MAHOGANY_MART
+	setevent EVENT_CLEARED_ROCKET_HIDEOUT
+	clearflag $000e
+	setevent $06dc
+	setevent $0757
+	clearevent $0735
+	setevent EVENT_TURNED_OFF_SECURITY_CAMERAS
+	setevent EVENT_SECURITY_CAMERA_1
+	setevent EVENT_SECURITY_CAMERA_2
+	setevent EVENT_SECURITY_CAMERA_3
+	setevent EVENT_SECURITY_CAMERA_4
+	setevent EVENT_SECURITY_CAMERA_5
+	verbosegiveitem HM_06, 1
+	setevent EVENT_GOT_HM06_WHIRLPOOL
+	setflag $0013
+	setevent $06cf
+	setevent $06d1
+	clearevent $06ce
+	clearevent $0025
+	setevent $0756
+	domaptrigger GROUP_MAHOGANY_TOWN, MAP_MAHOGANY_TOWN, $1
+	verbosegiveitem BASEMENT_KEY, 1
+	setevent $0573
+	verbosegiveitem CARD_KEY, 1
+	setevent $004a
+	setevent $0304
+	clearevent $0305
+	clearevent $0306
+	setevent $06c5
+	domaptrigger GROUP_BURNED_TOWER_1F, MAP_BURNED_TOWER_1F, $1
+	setevent EVENT_CLEARED_RADIO_TOWER
+	setevent $0571
+	clearflag $0013
+	setevent $06cc
+	setevent $06cd
+	setevent $06ce
+	clearevent $0736
+	clearflag $0017
+	clearevent $06cf
+	clearevent $06d0
+	setevent $06e3
+	clearevent $06e4
+	verbosegiveitem CLEAR_BELL, 1
+	domaptrigger GROUP_ECRUTEAK_HOUSE, MAP_ECRUTEAK_HOUSE, $0
+	setevent EVENT_GOT_CLEAR_BELL
+	setevent $0761
 	closetext
 	loadmovesprites
 	playsound SFX_WARP_TO
 	applymovement $2, MovementData_0x70155
 	disappear $2
-	clearevent $06d5
-	setevent EVENT_DECIDED_TO_HELP_LANCE
-	domaptrigger GROUP_MAHOGANY_MART_1F, MAP_MAHOGANY_MART_1F, $1
 	end
 ; 0x7004e
 
@@ -360,10 +406,6 @@ UnknownText_0x701b4: ; 0x701b4
 	line "I'm LANCE, a"
 	cont "trainer like you."
 
-	para "I heard some ru-"
-	line "mors, so I came to"
-	cont "investigate…"
-
 	para "I saw the way you"
 	line "battled earlier,"
 	cont $14, "."
@@ -375,28 +417,21 @@ UnknownText_0x701b4: ; 0x701b4
 	line "skill."
 
 	para "If you don't mind,"
-	line "could you help me"
-	cont "investigate?"
+	line "could you take"
+	cont "this junk away?"
 	done
 ; 0x702c6
 
 UnknownText_0x702c6: ; 0x702c6
 	text "LANCE: Excellent!"
 
-	para "It seems that the"
-	line "LAKE's MAGIKARP"
-
-	para "are being forced"
-	line "to evolve."
-
-	para "A mysterious radio"
-	line "broadcast coming"
-
-	para "from MAHOGANY is"
-	line "the cause."
-
-	para "I'll be waiting"
-	line "for you, ", $14, "."
+	para "I found all this"
+	line "around town,"
+	cont "but I have no use"
+	cont "for it at all."
+	
+	para "Take it off my"
+	line "hands, please!"
 	done
 ; 0x70371
 
