@@ -163,7 +163,7 @@ Route21_MapEventHeader: ; 0x1ac97a
 
 	; people-events
 	db 3
-	person_event SPRITE_SWIMMER_GIRL, 20, 15, $a, $0, 255, 255, $a2, 3, TrainerSwimmerfNikki, $ffff
+	person_event SPRITE_SWIMMER_GIRL, 20, 15, $1e, $0, 255, 255, $a2, 3, TrainerSwimmerfNikki, $ffff
 	person_event SPRITE_SWIMMER_GUY, 34, 6, $9, $0, 255, 255, $82, 4, TrainerSwimmermSeth, $ffff
 	person_event SPRITE_FISHER, 26, 18, $7, $0, 255, 255, $a2, 1, TrainerFisherArnold, $ffff
 ; 0x1ac9a7

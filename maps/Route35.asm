@@ -665,14 +665,14 @@ Route35_MapEventHeader: ; 0x19cf9e
 
 	; people-events
 	db 11
-	person_event SPRITE_YOUNGSTER, 23, 8, $a, $0, 255, 255, $a2, 2, TrainerCamperIvan, $ffff
+	person_event SPRITE_YOUNGSTER, 23, 8, $1e, $0, 255, 255, $a2, 2, TrainerCamperIvan, $ffff
 	person_event SPRITE_YOUNGSTER, 24, 12, $6, $0, 255, 255, $a2, 3, TrainerCamperElliot, $ffff
 	person_event SPRITE_LASS, 24, 11, $6, $0, 255, 255, $a2, 3, TrainerPicnickerBrooke, $ffff
-	person_event SPRITE_LASS, 30, 14, $a, $0, 255, 255, $a2, 1, TrainerPicnickerKim, $ffff
+	person_event SPRITE_LASS, 30, 14, $1e, $0, 255, 255, $a2, 1, TrainerPicnickerKim, $ffff
 	person_event SPRITE_YOUNGSTER, 32, 18, $6, $0, 255, 255, $92, 0, TrainerBird_keeperBryan, $ffff
 	person_event SPRITE_FISHER, 14, 6, $1e, $0, 255, 255, $82, 2, TrainerFirebreatherWalt, $ffff
 	person_event SPRITE_BUG_CATCHER, 11, 20, $6, $2, 255, 255, $b2, 3, TrainerBug_catcherArnie1, $ffff
-	person_event SPRITE_SUPER_NERD, 14, 9, $a, $0, 255, 255, $92, 2, TrainerJugglerIrwin1, $ffff
+	person_event SPRITE_SUPER_NERD, 14, 9, $1e, $0, 255, 255, $92, 2, TrainerJugglerIrwin1, $ffff
 	person_event SPRITE_OFFICER, 10, 9, $6, $0, 255, 255, $90, 0, OfficerScript_0x19ca49, $ffff
 	person_event SPRITE_FRUIT_TREE, 29, 6, $1, $0, 255, 255, $0, 0, FruitTreeScript_0x19ca7e, $ffff
 	person_event SPRITE_POKE_BALL, 20, 17, $1, $0, 255, 255, $1, 0, ItemFragment_0x19ca7c, $06b2

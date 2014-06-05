@@ -436,7 +436,7 @@ Route42_MapEventHeader: ; 0x1a95c9
 	; people-events
 	db 9
 	person_event SPRITE_FISHER, 14, 44, $8, $0, 255, 255, $a2, 1, TrainerFisherTully1, $ffff
-	person_event SPRITE_POKEFAN_M, 13, 55, $a, $0, 255, 255, $b2, 3, TrainerHikerBenjamin, $ffff
+	person_event SPRITE_POKEFAN_M, 13, 55, $1e, $0, 255, 255, $b2, 3, TrainerHikerBenjamin, $ffff
 	person_event SPRITE_SUPER_NERD, 12, 51, $6, $0, 255, 255, $92, 3, TrainerPokemaniacShane, $ffff
 	person_event SPRITE_FRUIT_TREE, 20, 31, $1, $0, 255, 255, $0, 0, FruitTreeScript_0x1a934d, $ffff
 	person_event SPRITE_FRUIT_TREE, 20, 32, $1, $0, 255, 255, $0, 0, FruitTreeScript_0x1a934f, $ffff

@@ -190,8 +190,8 @@ Route14_MapEventHeader: ; 0x1ad6a1
 	; people-events
 	db 4
 	person_event SPRITE_POKEFAN_M, 19, 15, $9, $0, 255, 255, $82, 3, TrainerPokefanmCarter, $ffff
-	person_event SPRITE_YOUNGSTER, 31, 15, $a, $0, 255, 255, $92, 3, TrainerBird_keeperRoy, $ffff
-	person_event SPRITE_POKEFAN_M, 15, 10, $a, $0, 255, 255, $82, 3, TrainerPokefanmTrevor, $ffff
+	person_event SPRITE_YOUNGSTER, 31, 15, $1e, $0, 255, 255, $92, 3, TrainerBird_keeperRoy, $ffff
+	person_event SPRITE_POKEFAN_M, 15, 10, $1e, $0, 255, 255, $82, 3, TrainerPokefanmTrevor, $ffff
 	person_event SPRITE_TEACHER, 9, 11, $5, $1, 255, 255, $a0, 4, TeacherScript_0x1ad47f, $ffff
 ; 0x1ad6db
 

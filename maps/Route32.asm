@@ -1204,7 +1204,7 @@ Route32_MapEventHeader: ; 0x19138d
 	person_event SPRITE_FISHER, 60, 16, $7, $0, 255, 255, $a2, 3, TrainerFisherRalph1, $ffff
 	person_event SPRITE_FISHER, 52, 10, $8, $0, 255, 255, $a2, 1, TrainerFisherHenry, $ffff
 	person_event SPRITE_YOUNGSTER, 26, 16, $9, $0, 255, 255, $92, 3, TrainerYoungsterAlbert, $ffff
-	person_event SPRITE_YOUNGSTER, 67, 8, $a, $0, 255, 255, $92, 3, TrainerYoungsterGordon, $ffff
+	person_event SPRITE_YOUNGSTER, 67, 8, $1e, $0, 255, 255, $92, 3, TrainerYoungsterGordon, $ffff
 	person_event SPRITE_YOUNGSTER, 49, 7, $7, $0, 255, 255, $a2, 3, TrainerCamperRoland, $ffff
 	person_event SPRITE_LASS, 34, 14, $8, $0, 255, 255, $a2, 1, TrainerPicnickerLiz1, $ffff
 	person_event SPRITE_COOLTRAINER_M, 12, 23, $8, $0, 255, 255, $0, 0, CooltrainerMScript_0x19046f, $ffff

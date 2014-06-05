@@ -138,7 +138,7 @@ Route1_MapEventHeader: ; 0x1ac69a
 	; people-events
 	db 3
 	person_event SPRITE_YOUNGSTER, 16, 8, $9, $0, 255, 255, $92, 4, TrainerSchoolboyDanny, $ffff
-	person_event SPRITE_COOLTRAINER_F, 29, 13, $a, $0, 255, 255, $82, 2, TrainerCooltrainerfQuinn, $ffff
+	person_event SPRITE_COOLTRAINER_F, 29, 13, $1e, $0, 255, 255, $82, 2, TrainerCooltrainerfQuinn, $ffff
 	person_event SPRITE_FRUIT_TREE, 11, 7, $1, $0, 255, 255, $0, 0, FruitTreeScript_0x1ac581, $ffff
 ; 0x1ac6cc
 

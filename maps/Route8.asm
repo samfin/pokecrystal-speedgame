@@ -298,7 +298,7 @@ Route8_MapEventHeader: ; 0x6c2e1
 	person_event SPRITE_BIKER, 13, 14, $8, $0, 255, 255, $a2, 5, TrainerBikerHarris, $ffff
 	person_event SPRITE_BIKER, 14, 14, $8, $0, 255, 255, $92, 5, TrainerBikerZeke, $ffff
 	person_event SPRITE_SUPER_NERD, 6, 27, $6, $0, 255, 255, $b2, 3, TrainerSupernerdSam, $ffff
-	person_event SPRITE_SUPER_NERD, 16, 35, $a, $0, 255, 255, $b2, 4, TrainerSupernerdTom, $ffff
+	person_event SPRITE_SUPER_NERD, 16, 35, $1e, $0, 255, 255, $b2, 4, TrainerSupernerdTom, $ffff
 	person_event SPRITE_FRUIT_TREE, 9, 37, $1, $0, 255, 255, $0, 0, FruitTreeScript_0x6c06c, $ffff
 ; 0x6c349
 

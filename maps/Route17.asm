@@ -240,9 +240,9 @@ Route17_MapEventHeader: ; 0x1ad2c5
 
 	; people-events
 	db 4
-	person_event SPRITE_BIKER, 21, 8, $a, $0, 255, 255, $b2, 4, TrainerBikerRiley, $ffff
+	person_event SPRITE_BIKER, 21, 8, $1e, $0, 255, 255, $b2, 4, TrainerBikerRiley, $ffff
 	person_event SPRITE_BIKER, 72, 13, $6, $0, 255, 255, $b2, 1, TrainerBikerJoel, $ffff
-	person_event SPRITE_BIKER, 57, 7, $a, $0, 255, 255, $b2, 3, TrainerBikerGlenn, $ffff
+	person_event SPRITE_BIKER, 57, 7, $1e, $0, 255, 255, $b2, 3, TrainerBikerGlenn, $ffff
 	person_event SPRITE_BIKER, 84, 10, $9, $0, 255, 255, $b2, 4, TrainerBikerCharles, $ffff
 ; 0x1ad313
 

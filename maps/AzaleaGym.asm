@@ -495,7 +495,7 @@ AzaleaGym_MapEventHeader: ; 0x18f3cc
 	; people-events
 	db 7
 	person_event SPRITE_BUGSY, 11, 9, $3, $0, 255, 255, $a0, 0, BugsyScript_0x18ec1e, $ffff
-	person_event SPRITE_BUG_CATCHER, 7, 9, $a, $0, 255, 255, $b2, 2, TrainerBug_catcherBug_catcher_benny, $ffff
+	person_event SPRITE_BUG_CATCHER, 7, 9, $1e, $0, 255, 255, $b2, 2, TrainerBug_catcherBug_catcher_benny, $ffff
 	person_event SPRITE_BUG_CATCHER, 12, 12, $6, $0, 255, 255, $b2, 3, TrainerBug_catcherAl, $ffff
 	person_event SPRITE_BUG_CATCHER, 6, 4, $6, $0, 255, 255, $b2, 3, TrainerBug_catcherJosh, $ffff
 	person_event SPRITE_TWIN, 14, 8, $6, $0, 255, 255, $82, 1, TrainerTwinsAmyandmay1, $ffff

@@ -346,8 +346,8 @@ Route19_MapEventHeader: ; 0x19ee31
 	; people-events
 	db 6
 	person_event SPRITE_SWIMMER_GIRL, 27, 13, $8, $0, 255, 255, $a2, 0, TrainerSwimmerfDawn, $ffff
-	person_event SPRITE_SWIMMER_GUY, 32, 17, $a, $0, 255, 255, $82, 3, TrainerSwimmermHarold, $ffff
-	person_event SPRITE_SWIMMER_GUY, 21, 15, $a, $0, 255, 255, $82, 3, TrainerSwimmermJerome, $ffff
+	person_event SPRITE_SWIMMER_GUY, 32, 17, $1e, $0, 255, 255, $82, 3, TrainerSwimmermHarold, $ffff
+	person_event SPRITE_SWIMMER_GUY, 21, 15, $1e, $0, 255, 255, $82, 3, TrainerSwimmermJerome, $ffff
 	person_event SPRITE_SWIMMER_GUY, 27, 12, $7, $0, 255, 255, $82, 0, TrainerSwimmermTucker, $ffff
 	person_event SPRITE_FISHER, 9, 13, $6, $0, 255, 255, $80, 1, FisherScript_0x19ea4d, $ffff
 	person_event SPRITE_FISHER, 9, 15, $5, $1, 255, 255, $90, 1, FisherScript_0x19ea61, $ffff

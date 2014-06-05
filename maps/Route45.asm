@@ -728,9 +728,9 @@ Route45_MapEventHeader: ; 0x19e91b
 	person_event SPRITE_POKEFAN_M, 69, 19, $9, $0, 255, 255, $b2, 2, TrainerHikerMichael, $ffff
 	person_event SPRITE_POKEFAN_M, 32, 9, $7, $0, 255, 255, $b2, 2, TrainerHikerParry3, $ffff
 	person_event SPRITE_POKEFAN_M, 69, 13, $8, $0, 255, 255, $b2, 1, TrainerHikerTimothy, $ffff
-	person_event SPRITE_BLACK_BELT, 54, 15, $a, $0, 255, 255, $b2, 2, TrainerBlackbeltKenji3, $ffff
+	person_event SPRITE_BLACK_BELT, 54, 15, $1e, $0, 255, 255, $b2, 2, TrainerBlackbeltKenji3, $ffff
 	person_event SPRITE_COOLTRAINER_M, 22, 21, $8, $0, 255, 255, $82, 1, TrainerCooltrainermRyan, $ffff
-	person_event SPRITE_COOLTRAINER_F, 40, 9, $a, $0, 255, 255, $82, 3, TrainerCooltrainerfKelly, $ffff
+	person_event SPRITE_COOLTRAINER_F, 40, 9, $1e, $0, 255, 255, $82, 3, TrainerCooltrainerfKelly, $ffff
 	person_event SPRITE_FRUIT_TREE, 86, 20, $1, $0, 255, 255, $0, 0, FruitTreeScript_0x19e294, $ffff
 	person_event SPRITE_POKE_BALL, 55, 10, $1, $0, 255, 255, $1, 0, ItemFragment_0x19e296, $06b8
 	person_event SPRITE_POKE_BALL, 70, 9, $1, $0, 255, 255, $1, 0, ItemFragment_0x19e298, $06b9

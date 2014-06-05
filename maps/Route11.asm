@@ -246,10 +246,10 @@ Route11_MapEventHeader: ; 0x68242
 
 	; people-events
 	db 5
-	person_event SPRITE_YOUNGSTER, 18, 26, $a, $0, 255, 255, $92, 3, TrainerYoungsterOwen, $ffff
+	person_event SPRITE_YOUNGSTER, 18, 26, $1e, $0, 255, 255, $92, 3, TrainerYoungsterOwen, $ffff
 	person_event SPRITE_YOUNGSTER, 8, 24, $6, $0, 255, 255, $92, 3, TrainerYoungsterJason, $ffff
 	person_event SPRITE_YOUNGSTER, 11, 32, $6, $0, 255, 255, $92, 1, TrainerPsychicHerman, $ffff
-	person_event SPRITE_YOUNGSTER, 10, 12, $a, $0, 255, 255, $92, 3, TrainerPsychicFidel, $ffff
+	person_event SPRITE_YOUNGSTER, 10, 12, $1e, $0, 255, 255, $92, 3, TrainerPsychicFidel, $ffff
 	person_event SPRITE_FRUIT_TREE, 6, 36, $1, $0, 255, 255, $0, 0, FruitTreeScript_0x68055, $ffff
 ; 0x68293
 

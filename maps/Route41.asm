@@ -562,15 +562,15 @@ Route41_MapEventHeader: ; 0x1a6f12
 
 	; people-events
 	db 10
-	person_event SPRITE_OLIVINE_RIVAL, 10, 36, $a, $0, 255, 255, $82, 3, TrainerSwimmermCharlie, $ffff
-	person_event SPRITE_OLIVINE_RIVAL, 12, 50, $a, $0, 255, 255, $82, 3, TrainerSwimmermGeorge, $ffff
+	person_event SPRITE_OLIVINE_RIVAL, 10, 36, $1e, $0, 255, 255, $82, 3, TrainerSwimmermCharlie, $ffff
+	person_event SPRITE_OLIVINE_RIVAL, 12, 50, $1e, $0, 255, 255, $82, 3, TrainerSwimmermGeorge, $ffff
 	person_event SPRITE_OLIVINE_RIVAL, 30, 24, $1e, $0, 255, 255, $82, 3, TrainerSwimmermBerke, $ffff
 	person_event SPRITE_OLIVINE_RIVAL, 34, 36, $1f, $0, 255, 255, $82, 3, TrainerSwimmermKirk, $ffff
 	person_event SPRITE_OLIVINE_RIVAL, 50, 23, $1e, $0, 255, 255, $82, 3, TrainerSwimmermMathew, $ffff
-	person_event SPRITE_SWIMMER_GIRL, 8, 21, $a, $0, 255, 255, $a2, 3, TrainerSwimmerfKaylee, $ffff
+	person_event SPRITE_SWIMMER_GIRL, 8, 21, $1e, $0, 255, 255, $a2, 3, TrainerSwimmerfKaylee, $ffff
 	person_event SPRITE_SWIMMER_GIRL, 23, 27, $7, $0, 255, 255, $a2, 3, TrainerSwimmerfSusie, $ffff
 	person_event SPRITE_SWIMMER_GIRL, 38, 31, $8, $0, 255, 255, $a2, 3, TrainerSwimmerfDenise, $ffff
 	person_event SPRITE_SWIMMER_GIRL, 32, 48, $9, $0, 255, 255, $a2, 4, TrainerSwimmerfKara, $ffff
-	person_event SPRITE_SWIMMER_GIRL, 54, 13, $a, $0, 255, 255, $a2, 2, TrainerSwimmerfWendy, $ffff
+	person_event SPRITE_SWIMMER_GIRL, 54, 13, $1e, $0, 255, 255, $a2, 2, TrainerSwimmerfWendy, $ffff
 ; 0x1a6fb3
 

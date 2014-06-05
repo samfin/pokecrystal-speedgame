@@ -576,7 +576,7 @@ Route26_MapEventHeader: ; 0x1a5389
 	db 8
 	person_event SPRITE_COOLTRAINER_M, 28, 18, $8, $0, 255, 255, $82, 2, TrainerCooltrainermJake, $ffff
 	person_event SPRITE_COOLTRAINER_M, 42, 13, $8, $0, 255, 255, $82, 3, TrainerCooltrainermGaven3, $ffff
-	person_event SPRITE_COOLTRAINER_F, 60, 14, $a, $0, 255, 255, $82, 3, TrainerCooltrainerfJoyce, $ffff
+	person_event SPRITE_COOLTRAINER_F, 60, 14, $1e, $0, 255, 255, $82, 3, TrainerCooltrainerfJoyce, $ffff
 	person_event SPRITE_COOLTRAINER_F, 12, 9, $9, $0, 255, 255, $82, 4, TrainerCooltrainerfBeth1, $ffff
 	person_event SPRITE_YOUNGSTER, 83, 17, $9, $0, 255, 255, $92, 2, TrainerPsychicRichard, $ffff
 	person_event SPRITE_FISHER, 96, 14, $6, $0, 255, 255, $a2, 3, TrainerFisherScott, $ffff

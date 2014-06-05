@@ -271,7 +271,7 @@ Route12_MapEventHeader: ; 0x1a72cf
 
 	; people-events
 	db 6
-	person_event SPRITE_FISHER, 17, 9, $a, $0, 255, 255, $a2, 1, TrainerFisherMartin, $ffff
+	person_event SPRITE_FISHER, 17, 9, $1e, $0, 255, 255, $a2, 1, TrainerFisherMartin, $ffff
 	person_event SPRITE_FISHER, 27, 18, $6, $0, 255, 255, $a2, 1, TrainerFisherStephen, $ffff
 	person_event SPRITE_FISHER, 42, 14, $8, $0, 255, 255, $a2, 5, TrainerFisherBarney, $ffff
 	person_event SPRITE_FISHER, 11, 10, $9, $0, 255, 255, $a2, 3, TrainerFisherKyle, $ffff
