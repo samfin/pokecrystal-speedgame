@@ -102,7 +102,6 @@ UnknownScript_0x70035: ; 0x70035
 	domaptrigger GROUP_ECRUTEAK_HOUSE, MAP_ECRUTEAK_HOUSE, $0
 	setevent EVENT_GOT_CLEAR_BELL
 	setevent $0761
-	closetext
 	loadmovesprites
 	playsound SFX_WARP_TO
 	applymovement $2, MovementData_0x70155
