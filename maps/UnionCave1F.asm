@@ -320,8 +320,8 @@ UnionCave1F_MapEventHeader: ; 0x59f35
 	; people-events
 	db 9
 	person_event SPRITE_POKEFAN_M, 10, 7, $9, $0, 255, 255, $b2, 2, TrainerHikerDaniel, $ffff
-	person_event SPRITE_SUPER_NERD, 25, 8, $a, $0, 255, 255, $92, 3, TrainerPokemaniacLarry, $ffff
-	person_event SPRITE_POKEFAN_M, 12, 15, $a, $0, 255, 255, $b2, 1, TrainerHikerRussell, $ffff
+	person_event SPRITE_SUPER_NERD, 25, 8, $1e, $0, 255, 255, $92, 3, TrainerPokemaniacLarry, $ffff
+	person_event SPRITE_POKEFAN_M, 12, 15, $1e, $0, 255, 255, $b2, 1, TrainerHikerRussell, $ffff
 	person_event SPRITE_FISHER, 31, 19, $8, $0, 255, 255, $82, 4, TrainerFirebreatherRay, $ffff
 	person_event SPRITE_FISHER, 23, 18, $7, $0, 255, 255, $82, 4, TrainerFirebreatherBill, $ffff
 	person_event SPRITE_POKE_BALL, 25, 21, $1, $0, 255, 255, $1, 0, ItemFragment_0x59c00, $065a

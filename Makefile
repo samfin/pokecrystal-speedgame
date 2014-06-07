@@ -63,7 +63,7 @@ $(OBJS): $$*.tx $$(patsubst %.asm, %.tx, $$($$*_DEPENDENCIES))
 
 crystal-speedgame.gbc: $(CRYSTAL_OBJS)
 	rgblink -n $*.sym -m $*.map -o $@ $^
-	rgbfix -Cjv -i BYTE -k 01 -l 0x33 -m 0x10 -p 0 -r 3 -t PM_CRYSTAL $@
+	rgbfix -Cjv -i KAPA -k 01 -l 0x33 -m 0x10 -p 0 -r 3 -t PM_CRYSTAL $@
 
 
 pngs:
